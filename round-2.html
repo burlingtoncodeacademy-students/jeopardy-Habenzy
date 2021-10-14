@@ -4,9 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css" />
   <title>Jeopardy</title>
 </head>
 <body>
-  <h1>Double Jeopardy</h1>
+  <div id="page-container">
+    <h1>Double Jeopardy</h1>
+    <h4 id="player-turn">It's player 1's Turn</h4>
+    <div id="board">
+      <div class="card category">Category</div>
+      <div class="card category">Category</div>
+      <div class="card category">Category</div>
+      <div class="card category">Category</div>
+      <div class="card category">Category</div>
+      <div class="card category">Category</div>
+      <div class="card">200</div>
+      <div class="card">200</div>
+      <div class="card">200</div>
+      <div class="card">200</div>
+      <div class="card">200</div>
+      <div class="card">200</div>
+      <div class="card">400</div>
+      <div class="card">400</div>
+      <div class="card">400</div>
+      <div class="card">400</div>
+      <div class="card">400</div>
+      <div class="card">400</div>
+      <div class="card">600</div>
+      <div class="card">600</div>
+      <div class="card">600</div>
+      <div class="card">600</div>
+      <div class="card">600</div>
+      <div class="card">600</div>
+      <div class="card">800</div>
+      <div class="card">800</div>
+      <div class="card">800</div>
+      <div class="card">800</div>
+      <div class="card">800</div>
+      <div class="card">800</div>
+      <div class="card">1000</div>
+      <div class="card">1000</div>
+      <div class="card">1000</div>
+      <div class="card">1000</div>
+      <div class="card">1000</div>
+      <div class="card">1000</div>
+    </div>
+
+    <form>
+      <input type="text" placeholder="What is... ?" />
+      <button>Guess</button>
+      <button>Pass</button>
+    </form>
+
+    <div id="scores">
+      <h6>Player 1 score: 0</h6>
+      <h6>Player 2 score: 0</h6>
+    </div>
+  </div>
+  <!--Link to final round-->
+  <a id="next-page" href="/final-jeopardy.html">Final Jeopardy</a>
 </body>
 </html>

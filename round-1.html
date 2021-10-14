@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
-</head>
-<body>
-  <h1>Round One</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <!--Page container for centering-->
+    <div id="page-container">
+      <h1>Round One</h1>
+      <h4 id="player-turn">It's player 1's Turn</h4>
+      <!--Game board container-->
+      <div id="board">
+        <div class="card category">Category</div>
+        <div class="card category">Category</div>
+        <div class="card category">Category</div>
+        <div class="card category">Category</div>
+        <div class="card category">Category</div>
+        <div class="card category">Category</div>
+        <div class="card">100</div>
+        <div class="card">100</div>
+        <div class="card">100</div>
+        <div class="card">100</div>
+        <div class="card">100</div>
+        <div class="card">100</div>
+        <div class="card">200</div>
+        <div class="card">200</div>
+        <div class="card">200</div>
+        <div class="card">200</div>
+        <div class="card">200</div>
+        <div class="card">200</div>
+        <div class="card">300</div>
+        <div class="card">300</div>
+        <div class="card">300</div>
+        <div class="card">300</div>
+        <div class="card">300</div>
+        <div class="card">300</div>
+        <div class="card">400</div>
+        <div class="card">400</div>
+        <div class="card">400</div>
+        <div class="card">400</div>
+        <div class="card">400</div>
+        <div class="card">400</div>
+        <div class="card">500</div>
+        <div class="card">500</div>
+        <div class="card">500</div>
+        <div class="card">500</div>
+        <div class="card">500</div>
+        <div class="card">500</div>
+      </div>
+      <!--Game controls-->
+      <form>
+        <input type="text" placeholder="What is... ?" />
+        <button>Guess</button>
+        <button>Pass</button>
+      </form>
+      <!--Score display-->
+      <div id="scores">
+        <h6>Player 1 score: 0</h6>
+        <h6>Player 2 score: 0</h6>
+      </div>
+    </div>
+    <!--Link to round 2-->
+    <a id="next-page" href="/round-2.html">Double Jeopardy</a>
+  </body>
 </html>
