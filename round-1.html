@@ -11,7 +11,9 @@
     <!--Page container for centering-->
     <div id="page-container">
       <h1>Round One</h1>
+      <div id="round-clock"></div>
       <h4 id="player-turn">It's player 1's Turn</h4>
+      
       <!--Game board container-->
       <div id="board">
         <div class="card category">Category</div>
@@ -20,50 +22,52 @@
         <div class="card category">Category</div>
         <div class="card category">Category</div>
         <div class="card category">Category</div>
-        <div class="card">100</div>
-        <div class="card">100</div>
-        <div class="card">100</div>
-        <div class="card">100</div>
-        <div class="card">100</div>
-        <div class="card">100</div>
-        <div class="card">200</div>
-        <div class="card">200</div>
-        <div class="card">200</div>
-        <div class="card">200</div>
-        <div class="card">200</div>
-        <div class="card">200</div>
-        <div class="card">300</div>
-        <div class="card">300</div>
-        <div class="card">300</div>
-        <div class="card">300</div>
-        <div class="card">300</div>
-        <div class="card">300</div>
-        <div class="card">400</div>
-        <div class="card">400</div>
-        <div class="card">400</div>
-        <div class="card">400</div>
-        <div class="card">400</div>
-        <div class="card">400</div>
-        <div class="card">500</div>
-        <div class="card">500</div>
-        <div class="card">500</div>
-        <div class="card">500</div>
-        <div class="card">500</div>
-        <div class="card">500</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="100">100</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="200">200</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="300">300</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="400">400</div>
+        <div class="card question" title="500">500</div>
+        <div class="card question" title="500">500</div>
+        <div class="card question" title="500">500</div>
+        <div class="card question" title="500">500</div>
+        <div class="card question" title="500">500</div>
+        <div class="card question" title="500">500</div>
       </div>
       <!--Game controls-->
       <form>
-        <input type="text" placeholder="What is... ?" />
-        <button>Guess</button>
-        <button>Pass</button>
+        <input type="text" placeholder="What is... ?" id="user-answer"/>
+        <button id="guess" disabled>Guess</button>
+        <button id="pass" disabled>Pass</button>
       </form>
+      <div id="turn-clock"></div>
       <!--Score display-->
       <div id="scores">
-        <h6>Player 1 score: 0</h6>
-        <h6>Player 2 score: 0</h6>
+        <h6>Player 1 score: <span id='player-1'>0</span></h6>
+        <h6>Player 2 score: <span id='player-2'>0</span></h6>
       </div>
     </div>
     <!--Link to round 2-->
     <a id="next-page" href="/round-2.html">Double Jeopardy</a>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
